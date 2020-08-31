@@ -33,7 +33,7 @@ public class LongPressGesture extends BaseClass {
 		System.out.println("App Opened successfully");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();
-		// Tap
+		
 		TouchAction t = new TouchAction(driver);
 		WebElement expandList = driver.findElementByXPath("//android.widget.TextView[@text='Expandable Lists']");
 		t.tap(tapOptions().withElement(element(expandList))).perform();
